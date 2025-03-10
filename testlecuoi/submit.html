@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Bootstrap CSS (v5) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- RSVP Section -->
+<section id="rsvp" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">RSVP</h2>
+      <p class="text-center mb-5">Vui lòng xác nhận sự có mặt của bạn.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Thay URL bên dưới bằng URL Formspree thật của bạn -->
+          <form action="https://formspree.io/f/mgvaeonw" method="POST" class="p-4 bg-white rounded shadow">
+            <div class="mb-3">
+              <label for="name" class="form-label">Họ và Tên:</label>
+              <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="attending" class="form-label">Sẽ tham dự:</label>
+              <select name="attending" id="attending" class="form-select">
+                <option value="yes">Có</option>
+                <option value="no">Không</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Lời nhắn:</label>
+              <textarea name="message" id="message" rows="4" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
